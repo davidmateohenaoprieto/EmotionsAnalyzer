@@ -2,10 +2,10 @@ import openai
 
 openai.api_key = "your chatgpt api key"
 
-system_init = '''Act as if you were a sentimen analyzer
-                so, i will send you messages and you 
-                are going to analyze the text in that message
-                at the end you have to return with at least one character and 4 as maximun (only numerical answers, can only be ints or floats). where -1 is maximum negativity, 0 is neutral and 1 is maximun positivity '''
+system_init = '''Act as if you were a sentimen analyzer. so, i will send you messages and you 
+                are going to analyze the text in that message at the end you have to return with
+                at least one character and 4 as maximun (only numerical answers, can only be ints or floats).
+                where -1 is maximum negativity, 0 is neutral and 1 is maximun positivity '''
 
 messages = [{"role":"system", "content":system_init}]
 
